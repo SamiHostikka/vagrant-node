@@ -1,6 +1,10 @@
 #!/bin/bash
 # http://blog.doismellburning.co.uk/2013/01/19/upgrading-puppet-in-vagrant-boxes/
 
+if [ -f "/var/vagrant_provision" ]; then
+    exit 0
+fi
+
 apt-get install --yes lsb-release
 DISTRIB_CODENAME=$(lsb_release --codename --short)
 DEB="puppetlabs-release-${DISTRIB_CODENAME}.deb"
@@ -15,3 +19,5 @@ then
 fi
 sudo apt-get update
 sudo apt-get install --yes puppet
+
+touch /var/vagrant_provision
