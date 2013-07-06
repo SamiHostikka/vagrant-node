@@ -65,6 +65,9 @@ Vagrant.configure("2") do |config|
   # #   content => "Welcome to your Vagrant-built virtual machine!
   # #               Managed by Puppet.\n"
   # # }
+
+  config.vm.provision :shell, :path => "upgrade-puppet.sh"
+
   #
   # config.vm.provision :puppet do |puppet|
   #   puppet.manifests_path = "manifests"
