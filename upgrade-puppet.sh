@@ -15,9 +15,9 @@ then
     # Print statement useful for debugging, but automated runs of this will interpret any output as an error
     # print "Could not find $DEB_PROVIDES - fetching and installing $DEB"
     wget -q http://apt.puppetlabs.com/$DEB
-    sudo dpkg -i $DEB
+    dpkg -i $DEB
 fi
-sudo apt-get update
-sudo apt-get install --yes puppet
+apt-get update
+apt-get install --yes puppet
 
 touch /var/vagrant_provision
