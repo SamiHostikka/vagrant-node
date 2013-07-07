@@ -4,3 +4,6 @@
 [submodule "modules/zsh"]
 	path = modules/zsh
 	url = https://github.com/breidh/puppet-zsh.git
+[submodule "modules/n"]
+	path = modules/n
+	url = https://github.com/hstkk/puppet-n.git
