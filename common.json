@@ -1,0 +1,15 @@
+{
+    "n::versions" : [
+        "stable"
+    ],
+    "node_modules::version": "stable", 
+    "node_modules::packages" : [
+        "express",
+        "grunt-cli",
+        "bower",
+        "supervisor",
+        "jshint",
+        "jslint",
+        "yuidocjs"
+    ]
+}
