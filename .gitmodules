@@ -1,3 +1,6 @@
 [submodule "modules/mongodb"]
 	path = modules/mongodb
 	url = https://github.com/puppetlabs/puppetlabs-mongodb.git
+[submodule "modules/zsh"]
+	path = modules/zsh
+	url = https://github.com/breidh/puppet-zsh.git
